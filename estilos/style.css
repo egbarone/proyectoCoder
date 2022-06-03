@@ -283,6 +283,15 @@ textarea {
 .imagen {
   width: 100%;
 }
+.imgcarro { 
+  height: 64vh;
+  object-fit: cover;
+}
+
+.carrusel{
+height: 64vh;
+
+}
 
 .menu {
   color: brown;
@@ -323,7 +332,12 @@ textarea {
   display: flex;
   justify-content: space-around;
 }
-
+.footer__nosotros ul li  {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 .footer__nosotros ul li a {
   color:rgb(18, 1, 1);
   text-decoration: none;
