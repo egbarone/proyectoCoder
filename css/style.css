@@ -41,15 +41,15 @@
 
 .h1 {
   color: #725802;
-  font-size: 3rem;
+  font-size: 3.5rem;
   background-color: beige;
   padding: 20px;
   display: inline-block;
   margin: 0 0.5rem;
   -webkit-animation: FlipInX;
           animation: FlipInX;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 #header-index {
@@ -151,6 +151,9 @@
   .navegacion {
     padding: 0px;
     margin-bottom: 10px;
+  }
+  .h1 {
+    font-size: 2.5rem;
   }
   .navegacion__menu {
     display: -webkit-box;
