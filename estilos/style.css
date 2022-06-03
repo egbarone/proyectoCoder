@@ -86,7 +86,16 @@ background-color: beige;
   grid-column-start: span 2;
 }
 
-footer {
+.imgcarroindex { 
+  height: 70vh;
+  object-fit: cover;
+}
+
+.carruselindex{
+height: 70vh;
+}
+
+.footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -290,6 +299,7 @@ textarea {
 
 .carrusel{
 height: 64vh;
+
 
 }
 
