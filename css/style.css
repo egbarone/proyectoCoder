@@ -1,0 +1,511 @@
+@import url(./_body.scss);
+@import url(./_general.scss);
+@import url(./_vars.scss);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navegacion {
+  background-color: beige;
+  padding: 40px;
+  text-transform: lowercase;
+}
+
+.navegacion ul {
+  list-style: none;
+}
+
+.navegacion__menu > li {
+  position: relative;
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+.navegacion__menu > li > a {
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: burlywood;
+  width: 160px;
+  text-align: center;
+}
+
+.navegacion__menu li a:hover {
+  color: black;
+}
+
+.h1 {
+  color: #725802;
+  font-size: 3rem;
+  background-color: beige;
+  padding: 20px;
+  display: inline-block;
+  margin: 0 0.5rem;
+  -webkit-animation: FlipInX;
+          animation: FlipInX;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+#header-index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 2rem;
+  font-family: 'Segoe UI', Tahoma;
+  background-color: beige;
+}
+
+.gallery-conteiner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 180px;
+  padding: 2px;
+  grid-gap: 2px;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery__item:nth-child(4) {
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+}
+
+.gallery__item:nth-child(5) {
+  -ms-grid-row: span 2;
+      grid-row-start: span 2;
+}
+
+.gallery__item:nth-child(9) {
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+}
+
+.imgcarroindex {
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carruselindex {
+  height: 70vh;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: beige;
+  padding-bottom: 25px;
+}
+
+.copy {
+  font-size: 15px;
+}
+
+.sociales {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+}
+
+.sociales a {
+  color: firebrick;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+  #header-index {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navegacion {
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+  .navegacion__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0px;
+  }
+  .navegacion__menu li {
+    margin: 0px;
+    margin-right: 10px;
+  }
+  .navegacion__menu li a {
+    padding: 0px;
+    width: 100px;
+    font-size: 24px;
+  }
+  .copy {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  #header-index {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navegacion {
+    padding: 0px;
+    margin-bottom: 10px;
+    width: 100;
+  }
+  .navegacion__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0px;
+    width: 100%;
+  }
+  .navegacion__menu li {
+    margin: 0px;
+    margin-right: 10px;
+  }
+  .navegacion__menu li a {
+    padding: 0px;
+    width: 130px;
+  }
+  .copy {
+    font-size: 13px;
+  }
+}
+
+/*PEDIDOS -------------------------------------------*/
+#body {
+  background-image: url(../imagenesD1/tipos-cerveza-artesanal.png);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+#h2-pedidos {
+  color: #837007;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+#boton {
+  background: #52524a;
+  color: #fff;
+  padding: 20px;
+}
+
+#boton:hover {
+  cursor: pointer;
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.link a {
+  color: beige;
+  text-transform: uppercase;
+  padding-left: 40px;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+}
+
+/*NOSOTROS -------------------------------------------*/
+.somos {
+  color: black;
+  background-color: beige;
+  padding: 20px 20px;
+}
+
+.somos__titulo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.somos__parrafo {
+  font-size: 23px;
+}
+
+.imagen {
+  width: 100%;
+}
+
+.imgcarro {
+  height: 64vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carrusel {
+  height: 64vh;
+}
+
+.menu {
+  color: brown;
+  background-color: beige;
+}
+
+.gallery-conteiner-nosotros {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 350px;
+  padding: 10px;
+  grid-gap: 15px;
+}
+
+.gallery__img-nosotros {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery__item-nosotros:nth-child(3) {
+  -ms-grid-row: span 2;
+      grid-row-start: span 2;
+}
+
+.footer__nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 20px 0px;
+  background-color: beige;
+}
+
+.footer__nosotros ul {
+  width: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer__nosotros ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.footer__nosotros ul li a {
+  color: #120101;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+}
+
+/* NUESTRAS CERVEZAS ------------------------------------- */
+.a-nc {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#body-nuestrasCervezas {
+  background-color: beige;
+}
+
+.cerveza__info--titulo {
+  color: red;
+}
+
+.cerveza__info {
+  width: 60%;
+}
+
+.contenedor__de__imagen {
+  position: relative;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cerveza__imagen {
+  width: 50%;
+}
+
+.cerveza {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header-nuestrasCervezas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navegacion__menu-nuestrasCervezas {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px;
+}
+
+#header-nuestrasCervezas h1 {
+  margin-bottom: 25px !important;
+}
+
+.navegacion__menu-nuestrasCervezas li {
+  margin-left: 15px;
+}
+
+.navegacion__menu-nuestrasCervezas li a {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+}
+
+.navegacion__menu-nuestrasCervezas li a:hover {
+  bottom: 3px;
+  text-decoration: underline;
+  color: red;
+}
+
+.cervezas-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cervezas-conteiner a {
+  padding: 2px;
+  background-color: #ececb9;
+  color: #633d99;
+  border: 1px solid;
+}
+
+.cerveza {
+  background-color: #efe0b0;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 80%;
+}
+
+h2, h3, p {
+  padding: 10px 0px;
+}
+/*# sourceMappingURL=style.css.map */
