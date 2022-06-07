@@ -63,31 +63,6 @@
   background-color: beige;
   }
   
-  .gallery-conteiner {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-auto-rows: 180px;
-    padding:2px;
-    grid-gap: 2px;
-  }
-  .gallery__img {
-     width: 100%;
-     height:100%;
-     object-fit: cover;
-  
-  
-  }
-  .gallery__item:nth-child(4) {
-     grid-column-start: span 2;
-  }
-  
-  .gallery__item:nth-child(5) {
-    grid-row-start: span 2;
-  }
-   
-  .gallery__item:nth-child(9) {
-    grid-column-start: span 2;
-  }
   
   .imgcarroindex { 
     height: 70vh;
