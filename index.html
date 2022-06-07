@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <link rel="stylesheet" href="./estilos/css/bootstrap.css">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CervezaOne</title>
-    <link rel="stylesheet" href="./estilos/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link rel="stylesheet" href="./estilos/fontello.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./estilos/fontello.css">
   </head>
   <body>
     <header id="header-index">
@@ -23,34 +23,33 @@
     </header>
 
     <main>
-      <div class="gallery-conteiner">
-        <div class="gallery__item">
-          <img src=".//imagenesD1/cerveza-casera.jpg" alt="" class="gallery__img">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner carruselindex">
+          <div class="carousel-item active">
+            <img src="./imagenesD1/cerveza-casera-3.jpg" class="d-block w-100  imgcarroindex " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenesD1/cerveza-casera-2.jpg" class="d-block w-100 imgcarroindex " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenesD1/cerveza-casera.jpg" class="d-block w-100  imgcarroindex " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenesD1/lupulo.jpg" class="d-block w-100  imgcarroindex " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenesD1/tipos-cerveza-artesanal.png" class="d-block w-100  imgcarroindex " alt="...">
+          </div>
+          
         </div>
-        <div class="gallery__item">
-          <img src=".//imagenesD1/cerveza-casera-2.jpg" alt="" class="gallery__img">
-        </div>
-        <div class="gallery__item">
-          <img src=".//imagenesD1/cerveza-casera-3.jpg" alt="" class="gallery__img">
-        </div>
-        <div class="gallery__item">
-          <img src=".//imagenesD1/tipos-cerveza-artesanal.png" alt="" class="gallery__img">
-        </div>
-        <div class="gallery__item">
-          <img src=".//imagenesD1/lupulo.jpg" alt="" class="gallery__img">
-        </div>
-        <div class="gallery__item">
-          <img src=".//imagenesD1/Amber-Ale.jpg" alt="" class="gallery__img">
-        </div>
-        <div class="gallery__item">
-          <img src=".//imagenesD1/Belgian-Golden.jpg" alt="" class="gallery__img">
-        </div>
-        <div class="gallery__item">
-          <img src=".//imagenesD1/cerceva Porter.jpg" alt="" class="gallery__img">
-        </div>
-        <div class="gallery__item">
-          <img src=".//imagenesD1/cerveza-casera-4.jpg" alt="" class="gallery__img">
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </main>
 
@@ -66,5 +65,6 @@
           2022 - ONE cerveza artesanal - +541169154987 - diseñoWeb EGB-ONE</p>
       </div>
     </footer>
+    <script src="./estilos/js/bootstrap.bundle.js"></script>
  </body>
 </html>
