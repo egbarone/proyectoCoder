@@ -46,10 +46,10 @@
   padding: 20px;
   display: inline-block;
   margin: 0 0.5rem;
-  -webkit-animation: FlipInX;
-          animation: FlipInX;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation: shakeX;
+          animation: shakeX;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 #header-index {
