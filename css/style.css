@@ -89,7 +89,7 @@
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-    justify-content: center;
+          justify-content: center;
   background-color: beige;
   padding-bottom: 25px;
 }
@@ -288,28 +288,6 @@ textarea {
 .menu {
   color: brown;
   background-color: beige;
-}
-
-.gallery-conteiner-nosotros {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 350px;
-  padding: 10px;
-  grid-gap: 15px;
-}
-
-.gallery__img-nosotros {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.gallery__item-nosotros:nth-child(3) {
-  -ms-grid-row: span 2;
-      grid-row-start: span 2;
 }
 
 .footer__nosotros {
