@@ -473,6 +473,10 @@ h2, h3, p {
 }
 
 @media only screen and (max-width: 480px) {
+  .a-nc {
+    text-decoration: none;
+    font-size: 15px;
+  }
   .cerveza {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
