@@ -245,11 +245,20 @@
       text-decoration: none;
   
   }
-  @media (max-width:480px) {
+  @media only screen and (max-width:480px) {
     form{
        width: 100%;
     }
+    
+    .link a { 
+        font-size: 15px;
+        padding: 0;
+        margin-right: 15px;
+    }
+
   }
+
+
   
   
   /*NOSOTROS -------------------------------------------*/
@@ -323,7 +332,12 @@
     padding: 10px;
   }
   
-  
+  @media only screen and (max-width: 480px) {
+    .footer__nosotros ul li a{
+      font-size: 20px;
+    }
+
+  }
   
   
   /* NUESTRAS CERVEZAS ------------------------------------- */
@@ -420,3 +434,19 @@
   h2 ,  h3 , p {
   padding: 10px 0px;
   }
+
+
+
+  @media only screen and (max-width: 480px) {
+
+  .cerveza{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navegacion__menu-nuestrasCervezas{
+    h2{
+      text-align: center;
+    }
+  }
+ }
