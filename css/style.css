@@ -116,6 +116,9 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  #header-index h1 {
+    text-align: center;
+  }
   .navegacion {
     padding: 0px;
     margin-bottom: 10px;
@@ -136,7 +139,7 @@
   .navegacion__menu li a {
     padding: 0px;
     width: 100px;
-    font-size: 24px;
+    font-size: 16px;
   }
   .copy {
     font-size: 10px;
