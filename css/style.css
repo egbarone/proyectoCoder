@@ -12,7 +12,6 @@
 .navegacion {
   background-color: beige;
   padding: 40px;
-  text-transform: lowercase;
 }
 
 .navegacion ul {
@@ -30,13 +29,14 @@
   padding: 5px 20px;
   text-decoration: none;
   color: white;
-  background-color: burlywood;
+  background-color: #a88658;
+  border-radius: 7%;
   width: 160px;
   text-align: center;
 }
 
 .navegacion__menu li a:hover {
-  color: black;
+  color: #925305;
 }
 
 .h1 {
@@ -46,8 +46,8 @@
   padding: 20px;
   display: inline-block;
   margin: 0 0.5rem;
-  -webkit-animation: shakeX;
-          animation: shakeX;
+  -webkit-animation: zoomIn;
+          animation: zoomIn;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
 }
